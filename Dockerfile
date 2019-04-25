@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y \
     google-chrome-stable \
     nodejs \
     --no-install-recommends \
-  && apt-get purge --auto-remove -y curl gnupg \
+  && apt-get purge --auto-remove -y gnupg \
   && rm -rf /var/lib/apt/lists/*
 
 ARG CACHEBUST=1
